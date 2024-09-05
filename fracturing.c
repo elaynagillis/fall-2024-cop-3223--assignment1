@@ -27,11 +27,26 @@ int main(void)
         double distance = sqrt(x_squared + y_squared);
         printf("Point #1 entered: x1=%d; y1=%d\nPoint #2 entered: x2=%d; y2=%d\nThe distance between the two points is %.2f\n", px1, py1, px2, py2, distance);
         
+
     double calculatePerimeter();
         double PI = 3.14159;
         double perimeter = (PI * 2 * distance);
         printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+        
+    
+    double calculateArea();
+        double radius_squared = pow(distance / 2, 2);
+        double area = (PI * radius_squared);
+        printf("The area of the city encompassed by your request is %.2f\n", area);
+        
 
+    double calculateWidth();
+        printf("The width of the city encompassed by your request is %.2f\n", distance);
+        
+
+    double calculateHeight();
+        printf("The height of the city encompassed by your request is %.2f\n", distance);
+        
     
     return 0; 
 }
