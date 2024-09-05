@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+double calculatePerimeter() {
 
 
 
-    double calculateDistance();
+    double calculateDistance() {
 
         // define variables for the points
         int px1 = 0;
@@ -26,5 +26,11 @@ int main() {
         double distance = sqrt(x_squared + y_squared);
 
         printf("Point #1 entered: x1=%d; y1=%d\nPoint #2 entered: x2=%d; y2=%d\nThe distance between the two points is %.2f\n", px1, py1, px2, py2, distance);
+        return distance;
+    }
+    double pi = 3.14159265;
+    double perimeter = (2 * pi* (distance /2));
+    printf("The perimeter of the city encompassed by your request is %.2f.\n", perimeter);
+    
     return 0; 
 }
