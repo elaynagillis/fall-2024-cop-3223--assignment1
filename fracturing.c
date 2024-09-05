@@ -1,3 +1,7 @@
+// Elayna Gillis
+// Student ID: 5428883
+// UCF ID: el186881
+
 #include <stdio.h>
 #include <math.h>
 
@@ -27,5 +31,7 @@ int main(void)
         double PI = 3.14159;
         double perimeter = (PI * 2 * distance);
         printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+
+    
     return 0; 
 }
