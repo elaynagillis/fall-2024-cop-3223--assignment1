@@ -18,9 +18,10 @@
 // askForUserInput()
 //
 // Purpose:         Asks for point values, x and y, from user. Calculates diastance.
+// Input:           Four integers. (For each time its ran)
 // Output:          Prints prompt for user input for point values. Prints input values for points.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns Distance value.
 //************************************************************************************************
 
 double askForUserInput() {
@@ -57,7 +58,7 @@ double askForUserInput() {
 // Purpose:         Runs the function askUserForInput() to calculate and print the distance. 
 // Output:          Prints the distance value.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns distance value.
 //******************************************************************************************
 
 double calculateDistance() {     
@@ -76,7 +77,7 @@ double calculateDistance() {
 // Purpose:         Runs the function askUserForInput() to calculate and print the perimeter. 
 // Output:          Prints the perimeter value.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns function's difficulty level.
 //******************************************************************************************
 
 double calculatePerimeter() {
@@ -97,7 +98,7 @@ double calculatePerimeter() {
 // Purpose:         Runs the function askUserForInput() to calculate and print the area. 
 // Output:          Prints the area value.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns function's difficulty level.
 //******************************************************************************************
 
     double calculateArea() {
@@ -116,7 +117,7 @@ double calculatePerimeter() {
 // Purpose:         Runs the function askUserForInput() to calculate and print the width. 
 // Output:          Prints the width value.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns function's difficulty level.
 //******************************************************************************************
 
 double calculateWidth() {
@@ -135,7 +136,7 @@ double calculateWidth() {
 // Purpose:         Runs the function askUserForInput() to calculate and print the height. 
 // Output:          Prints the height value.
 // Precondition:    None.
-// Postcondition:   None.
+// Postcondition:   Returns function's difficulty level.
 //******************************************************************************************
 
 double calculateHeight() {
