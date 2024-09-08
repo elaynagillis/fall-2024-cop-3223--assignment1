@@ -14,14 +14,21 @@
 #define PI 3.14159
 
 
-//Function that asks user to input points and caclulates a distance value.
+//************************************************************************************************
+// askForUserInput()
+//
+// Purpose:         Asks for point values, x and y, from user. Calculates diastance.
+// Output:          Prints prompt for user input for point values. Prints input values for points.
+// Precondition:    None.
+// Postcondition:   None.
+//************************************************************************************************
+
 double askForUserInput() {
 
-    //defining variables for each point.
-    int px1 = 0;
-    int px2 = 0;
-    int py1 = 0;
-    int py2 = 0;
+    int px1 = 0;           //X-Value for the first point
+    int px2 = 0;           //X-Value for the second point
+    int py1 = 0;           //Y-Value for the first point
+    int py2 = 0;           //Y-value for the second point
 
     //Asking for values for each point.
     printf("Enter the x value for the first point: \n");
@@ -35,15 +42,24 @@ double askForUserInput() {
     printf("Point #1 entered: x1=%d ; y1=%d\nPoint #2 entered: x2=%d ; y2=%d\n", px1, py1, px2, py2);
         
     // calulations for the distance using the input from the user.
-    double x_squared = pow((px2 - px1),2);
-    double y_squared = pow((py2 - py1),2);
+    double x_squared = pow((px2 - px1), 2);
+    double y_squared = pow((py2 - py1), 2);
     double distance = sqrt(x_squared + y_squared);
 
     return distance;
  }
 
 
-//Function for distance
+
+//******************************************************************************************
+// calculateDistance()
+//
+// Purpose:         Runs the function askUserForInput() to calculate and print the distance. 
+// Output:          Prints the distance value.
+// Precondition:    None.
+// Postcondition:   None.
+//******************************************************************************************
+
 double calculateDistance() {     
 
     //takes in points from askForUserInput Fuction and prints the distance.
@@ -54,7 +70,15 @@ double calculateDistance() {
 }
 
 
-//Function for perimeter.
+//******************************************************************************************
+// calculatePerimeter()
+//
+// Purpose:         Runs the function askUserForInput() to calculate and print the perimeter. 
+// Output:          Prints the perimeter value.
+// Precondition:    None.
+// Postcondition:   None.
+//******************************************************************************************
+
 double calculatePerimeter() {
 
     //calculates the Perimeter based on the points from input function.
@@ -66,7 +90,16 @@ double calculatePerimeter() {
 }
 
 
-//Function for Area.
+
+//******************************************************************************************
+// calculateArea()
+//
+// Purpose:         Runs the function askUserForInput() to calculate and print the area. 
+// Output:          Prints the area value.
+// Precondition:    None.
+// Postcondition:   None.
+//******************************************************************************************
+
     double calculateArea() {
 
         //calculates the area based on values from the input function.
@@ -75,8 +108,17 @@ double calculatePerimeter() {
         return 2;
     }
 
-   
-//Fucntion for Witdh.
+
+
+//******************************************************************************************
+// calculateWidth()
+//
+// Purpose:         Runs the function askUserForInput() to calculate and print the width. 
+// Output:          Prints the width value.
+// Precondition:    None.
+// Postcondition:   None.
+//******************************************************************************************
+
 double calculateWidth() {
 
     //Prints the width based on the point data from the input function.
@@ -86,7 +128,16 @@ double calculateWidth() {
 }
 
 
-//Function for Height.
+
+//******************************************************************************************
+// calculateHeight()
+//
+// Purpose:         Runs the function askUserForInput() to calculate and print the height. 
+// Output:          Prints the height value.
+// Precondition:    None.
+// Postcondition:   None.
+//******************************************************************************************
+
 double calculateHeight() {
 
     //Prints the height based on the point data from the input function.
@@ -96,7 +147,16 @@ double calculateHeight() {
 }
 
 
-//Main function that calls all functions above.
+
+//******************************************************************************************
+// int main()
+//
+// Purpose:         Calls all other functions. 
+// Output:          None.
+// Precondition:    int argc, char **argv
+// Postcondition:   None.
+//******************************************************************************************
+
 int main(int argc, char **argv) {
     calculateDistance();
     calculatePerimeter();
